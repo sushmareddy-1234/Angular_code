@@ -1,0 +1,383 @@
+ANGULAR NOTES
+ to check versions in command prompt,open cmd and type version
+ to check version of node js,type node -v (or)ng version (or)ng v
+ npm install -g @angular/cli
+(cli)=command line interface
+ to check version npm--version
+ to check version of vs code type (npm --version)
+ npm=node packager manager
+ it is a client server
+ it is a type script server
+ transpiling means it will convert type script to java script 
+ system understand only java script
+ data types in angular
+    1.boolean
+     2.string
+      3.numbers
+explicit,implicit
+  explicit=we can't add values directly instad we can add with variables,and string
+  implicit=we want to add within string and use with function
+like data types we will write any,unknown.
+any means we will through error,in unknown it will acess value but it will not through error
+ _________________________________________________________________________________________________________________- 
+
+TODAY:8/10/23
+1.INTRODUCTION TO ANGULAR
+2.SPA
+3.FEATURES OF ANGULAR
+
+ type script is a super script of java script
+ it was introduced by microsoft office
+ in java we have prototypes,dynamic types,constructor function
+ type script is strongly typed but in java scripe it not
+ let is a keyword in angular,it declares as variable.
+ ARRAY[]
+ array is a kind of lists to allocate some memory spaces or blocks
+ ex:var student_name :string[];
+ student_name=['sushma', 'dharani','sangeetha']
+           (0)       (1)       (2)
+ back side it will run like
+ student_name [0]->sushma
+              [1]->dharani
+              [2]->sangeetha
+ console.log(student_name[0],'student');
+ in angular we want to terminal values use(console.log)
+ functions in array[]
+ concat(),  every(), filter(),  foreach(),  join(),  lastindex(),  map(),  push(),  reduce(),  reduce right(),
+ reverse(),  shift(),  slice(),  some(),  sort(),  to string(),  unshift().
+
+
+ to run program open terminal node <file_name>.js
+ in visual stidio code tsc <file_name>.tsc
+ ------------------------------------------------------------------------------------------------------------
+ today topic:properties
+             methods
+			 constructors
+#these three are variables we use in function, we define in a class.
+it intilaiae the properties of a object
+1)PROPERTIES:
+claas_student{
+       name : string
+	   roll no : numbers
+	   }
+Constructor(name:stringmroll no: number)
+          {
+		  name : this name;
+		  roll no: this roll no;
+		  }
+		  this addition();
+2)methods:
+       these are the methods which use the class functions in the codes 
+	   class addition{
+	   }
+3)constructors:
+            these are the intialize the properties of aobject
+			this addition();
+			count std = new student();
+			
+			constuctor = (name : string,roll no : number)
+			{
+			  Name : this name;
+			  Roll no : this roll no;
+			}
+			
+#new is the key word in this propeties.
+#properties define the characterstics attributes of an object created from the class.
+#method  functions defined within acclass,
+  it define the behaviour of the class and can operate the class properties.
+ #constructors:it is called when object is created from class wing new().
+		  
+ #difference betwwen var and let with examples.
+
+--------------------------TODAY CLASS--------------------------------------------
+1.local variable:
+we have to use variable within function only ,we can use let in locla variable but we cant use var in local variable.
+2.global variable:
+we have to use variable in outside the function in global variable we cant use let keyword but we can use var in global variable.
+
+example for local variable:
+function fita()
+ {
+ let a = 10;
+ }
+ example for global variable:
+ var a;
+ function fita()
+ {
+ return a;
+  }
+  function(){
+  a
+  }
+ 3.inheritance we can use in class after.it is like blue print.
+ 4.extends is the keyword in inheritence.
+ 5. we can derive from parent class as blue print and we can use in others clasess.
+ 6. in inheritence we have base class and derived class.
+ TYPES OF INHERITENCES:
+ 1.single inheritence
+ 2.multilevel inheritence
+ 3.multiple inheritence
+ 4.hierarchial inheritance
+ 5.hybrid inheritence
+ 6.type script supports only single and multilevel inheritence it not support multiple,hierarchial and hybrid inheritence.
+   ->in single class inheritance it has parentclass and derived.
+   ->for multilevel inheritence has more than one parent class(grand father,father and child).
+   ->for multiple inheritence it acquries the properties from more than one parent class.
+   ->for hirarchial inheritance more than one subclass is inherited from a single base class.
+   ->for hybrid inheritence it is a combination of multilevel and multiple inheritence.
+ -------------------------------------------------------------------------------------------------------
+ NEXT TOPIC:Access Modifiers
+ 1.public
+ 2.private
+ 3.protected
+ ->in protected if we define only it shows in private it menas it shows in within var but it not show in public.
+ example for protected using extends key word
+  class car{
+  public color: string;
+  }
+  if we take  as sample because it is in public.
+  class sample{
+  this.color = 'pink';
+   }
+   ->we can use keyword extendsclass fita extends car{
+   console.log('');
+   this.prize = 1000;
+   }
+ -----------------------------------------------------------------------------------------------------------------------
+ TODAY CLASS:29/10/23
+ 1.Static Methods:
+ ->keyword is static in typescript.
+ ->in static it is constant only not change.
+   class num{
+   static square(num:number){
+     return num;
+	}
+    }
+ ->Topic want to show in vs code Calculator Application.
+ 
+ Topic:Interfaces
+ ->interface it should be in within class only.
+ example:
+     interface fita academy{
+	 
+	 student_name: string;
+	 batch_no : number;
+	 techonologies : string;
+	 completion status? : string; -->optional
+	 read only we given means it allows to read but not to modify.
+	 
+	 
+	 const academy:fita academy{
+	 student_name : 'sushma';
+	 batch_no : 5;
+	 techonologies : 'angular';
+	 }
+	 }
+	 ________________________________________________________________________________________________________________________________
+	 ANGULAR:
+	 ->in angular component means html,css,ts,specs.ts.
+	 
+	 COMMANDS IN ANGULAR:
+	 
+	 ->ng build = compiles an angular application into an output directory.
+	 ->ng serve = builds and serve your application, rebuilding on file changes.
+	 ->ng generate = generates or modifies files based on a schematic.
+	 ->ng test = runs unit test on a given project.
+	 ->ng e2e = builds and serves an angular application, then runs end-to-end tests.
+	 
+	  UNDERSTANDING ANGULAR:
+	  
+	 ->components
+	 ->templates
+	 ->directives
+	 ->dependency injection.
+   
+----------------------------------------------------------------------------------------------------------------------------------------
+TODAY:11/5/23
+TOPIC:FRAMEWORK,LIBRARY
+framework:
+->it will use in frontend
+->it was developed by google
+->it was component based architecture
+    _____dependency injection 
+	_____services
+	
+framework types:
+ ->core angular framework
+ eg:components,
+      services,
+	  dependency injection.
+	 
+ ->testing framework:
+ eg:jasmine,
+    karma,
+	protector.
+	
+
+library :
+->resuable code modules or
+  structure----->angular application
+->ngrx,rxjs,prime ng
+->eg:new date();
+   5nov 2023,1.30 esi
+   
+library types:
+->ui component libraries
+ eg:primeNg,
+    ng x-bootstrap,
+    clarity.
+->state management libraries:
+ eg:ngrx,
+     akita,
+	 redux
+	 
+->http & api libraries:
+ eg:Axies,
+     Rxjs.
+	 
+->form handling libraries:
+ eg:angular reactive forms
+ 
+->routing libraries:
+  eg:@ angular/router
+  
+  
+---------------------------------------------------------------------------------------------------------------
+STRUCTURE OF MVC IN ANGULAR
+->it applies both client &server side.
+ mvc ->model, view, controller.
+   MVC
+   ->model it has data structures,
+                       logics.
+					   
+   ->view it has html,
+                 dom elemnt
+   ->controller it has model and view (userprint)
+   
+_________________________________________________________________________________________________________________-
+ELEMENTS IN ANGULAR
+-->We wnt to angular start we want to use app module.
+1)modules
+   in that we havecomponents like
+                                html,
+								css,
+								typescript,
+								specs.ts.
+					 in modules all want to generate means module.ts  
+		it has routing module.
+		
+
+TOPIC:DATABINDING IN ANGULAR
+  1)INTERPOLATION {{}}                                           (HTML)
+  2)PROPERTY BINDING []                                          <INPUT [VALUE] = "USERNAME">
+  3)EVENT BINDING()                                               <DIV (CLICK) = ONCLICK()>
+  4)TWO-WAY DATA BINDING[()]                                       <INPUT [(NGMODEL)] -"USERNAME">
+  5)CLASS BINDING [CLASS.ACTIVE]                                   
+  6)STYLE BINDING [STYLE.COLOR]
+  7)ATTRIBUTE BINDING [ATTR]
+  
+  
+TEMPLATES::
+  ->structural directives
+     1)ngfor
+	 2)ngif
+	 
+TEMPLATE VARIABLES::
+ ->we can use (#) in variables
+   <input #myinput .txt>
+   in that myipnput means id.
+   
+ METADATA::
+ we can use(@) to define matadata.
+ it will use to define a component,modulus, and directives.
+ 
+ _________________________________________________________________________________________________________________-
+ TODAY:19/11/23
+ 
+ TOPIC:JAVASCRIPT:
+ 1)advantages and disadvantages for javascript and keypoints in ppt.
+ 
+ 1)KEY ASPECTS OF JAVASCRIPT:
+     ->client side
+      ->ECMA script
+        ->web development
+          ->event driven programming
+              ->libraries & frameworks
+  _________________________________________________________________________________________________________________-
+  Upper Camel Case (Pascal Case):
+FirstName, LastName, MasterCard, InterCity.
+Lower Camel Case:
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+firstName, lastName, masterCard, interCity.
+
+JavaScript Assignment Operators
+Shift Assignment Operators
+Bitwise Assignment Operators
+Logical Assignment Operators
+The = Operator
+The += Operator
+The -= Operator
+The *= Operator
+The **= Operator
+The /= Operator
+The %= Operator
+
+The <<= Operator
+The >>= Operator
+The >>>= Operator
+The &= Operator
+The |= Operator
+The &&= Operator
+The ||= Operator
+The ??= Operator
+
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. date
+
+
+______________________________________________________________________________________________________________________________________-
+1)onchange	An HTML element has been changed
+2)onclick	The user clicks an HTML element
+
+ work on w3 schools js number methods:
+ .to string()
+ .to fixed()
+ value of()
+ number
+ parseint
+ parsefolat
+ number.parse int
+ number.parse float
+ ___________________________________________________________________________________________________________________________________________
+ 1)array methods:
+ pop()means it exclude(delete) the value in array[]
+ push means it include(add) the value in array[]
+ sort()means it starting the array that means it keep the values in order
+ length() means length of array 
+ 
+ 
+ 
+	 
+
+
+   
+                 
+  
+  
+ 
+ 
