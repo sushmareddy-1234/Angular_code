@@ -7,15 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent  implements OnInit{
-  constructor(
-    private router: Router
-  ){}
+
+  constructor(private router: Router) { }
+
  ngOnInit(): void {
-   
+ }  
+
+ goToRegisterPage() {
+  this.router.navigate(['/register']); //Navigate to the about page
  }
- navToRegisterPage(event :Event){
-  event.preventDefault();
-  this.router.navigate(['/register']);
-}
 
 }
+
+
