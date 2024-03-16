@@ -9,6 +9,7 @@ import { AppServiceService } from './app-service.service';
 
 export class AppComponent {
   greeting!: string;
+  title: any;
 
   constructor(private appService: AppServiceService) {
     this.greeting = this.appService.greet('John');

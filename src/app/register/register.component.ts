@@ -11,7 +11,7 @@ export class RegisterComponent implements OnInit {
     private location : Location
   ){}
   ngOnInit(): void {
-    
+  localStorage.setItem('flag', 'true')  ;
   }
   goBack(){
     this.location.back();
